@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+venv/
+.env.local
+
+# Data files (if large)
+data/raw/*
+data/processed/*
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
