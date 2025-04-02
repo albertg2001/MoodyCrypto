@@ -9,9 +9,12 @@ api = KaggleApi()
 api.authenticate()
 
 # Define the dataset identifier and the destination directory
-dataset = 'oliviervha/crypto-news'
+news_dataset = 'oliviervha/crypto-news'
+price_dataset = 'kapturovalexander/bitcoin-and-ethereum-prices-from-start-to-2023'
+
 destination = os.path.expanduser('~/Desktop/MoodyCrypto/MoodyCrypto/data/raw')  
-# Download the dataset
-api.dataset_download_files(dataset, path=destination, unzip=True)
+api.dataset_download_files(news_dataset, path=destination, unzip=True)
+api.dataset_download_files(price_dataset, path=destination, unzip=True)
 
 print(f"Dataset downloaded and extracted to {destination}")
+
