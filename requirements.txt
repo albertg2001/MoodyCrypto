@@ -12,3 +12,4 @@ prophet
 streamlit
 plotly
 kaggle
+vaderSentiment
